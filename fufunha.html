@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fufunha.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Criar Uma Conta</h2>
+      </div>
+
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Nome de usuário</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite seu nome de usuário..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Digite seu email.." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="tipo-pessoa">Pessoa Física ou Jurídica</label> <br>
+          <select id="tipo-pessoa">
+            <option value="">Selecione...</option>
+            <option value="fisica">Pessoa Física</option>
+            <option value="juridica">Pessoa Jurídica</option>
+          </select>
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+        </div>
+
+        <div class="form-control" id="div-cpf">
+          <label for="cpf">CPF</label> <br>
+          <input type="number" id="cpf" placeholder="Digite seu CPF..." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control" id="div-cnpj">
+          <label for="cnpj">CNPJ</label> <br>
+          <input type="number" id="cnpj" placeholder="Digite seu CNPJ..." />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Digite sua senha..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password-confirmation">Confirmação de senha</label>
+          <input
+            type="password"
+            id="password-confirmation"
+            placeholder="Digite sua senha novamente..."
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small>Mensagem de erro</small>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/f9e19193d6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./fufunha.js"></script>
+  </body>
+</html>
